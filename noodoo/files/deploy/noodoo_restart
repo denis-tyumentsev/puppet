@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo systemctl restart noodoo.service && echo "noodoo was restarted" &&
+sudo systemctl restart noodoo-queue.service && echo "noodoo-queue was restarted" &&
+echo "restart successful"
+

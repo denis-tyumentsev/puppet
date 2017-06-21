@@ -1,0 +1,13 @@
+{
+  "name": "tumentsev-zabbix",
+  "version": "1.0.0",
+  "author": "Eurochem",
+  "summary": "Add user key for nts offset for zabbix agent ",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+ "dependencies": [
+   ]
+}
+

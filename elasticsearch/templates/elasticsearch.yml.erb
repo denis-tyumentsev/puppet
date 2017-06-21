@@ -1,0 +1,14 @@
+cluster.name: <%= @cluster_name %>
+node.name: ${HOSTNAME}
+bootstrap.memory_lock: true
+network.host: 0.0.0.0
+http.port: 9200
+transport.tcp.port: 9300
+discovery.zen.ping.unicast.hosts: <%= @hosts %>
+#discovery.zen.minimum_master_nodes: 1
+#gateway.expected_nodes: 1
+#shield.http.ssl: true
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+node.master: <%= @node_master %>
+node.data: <%= @node_data %>

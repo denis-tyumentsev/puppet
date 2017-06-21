@@ -1,0 +1,5 @@
+[nodejs]
+name=Eurochem Nodejs Repository
+baseurl=http://uds-puppet.moscow.eurochem.ru/nodejs6x/CentOS/7/x86_64
+enabled=1
+gpgcheck=0

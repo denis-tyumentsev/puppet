@@ -1,0 +1,6 @@
+%<%= @noodoo_user %> ALL=(sphinx) NOPASSWD: /bin/indexer*
+%<%= @noodoo_user %> ALL=(root)   NOPASSWD: /etc/init.d/searchd, /bin/rm /usr/local/var/data/*, /bin/su sphinx
+%<%= @noodoo_user %> ALL=(root)   NOPASSWD: /bin/systemctl stop searchd*, /bin/systemctl start searchd*
+%<%= @noodoo_user %> ALL=(root)   NOPASSWD: /usr/bin/chown -R noodoo\:noodoo <%= @noodoo_path %>*, /usr/bin/chmod -R g+w <%= @noodoo_path %>*
+%<%= @noodoo_user %> ALL=(root)   NOPASSWD: /usr/local/bin/noodoo*
+%<%= @noodoo_user %> ALL=(root)   NOPASSWD: /bin/systemctl restart noodoo*, /bin/systemctl start noodoo*, /bin/systemctl reload noodoo*, /bin/systemctl status noodoo*

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+/bin/kill -s SIGUSR2 $(cat <%= @noodoo_path %>/shared/pids/noodoo-queue.pid) && echo "noodoo-queue was reloaded"
+

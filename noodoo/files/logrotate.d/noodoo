@@ -1,0 +1,10 @@
+/var/log/noodoo/*.log {
+    su noodoo noodoo 
+    daily
+    rotate 28
+    copytruncate
+    delaycompress
+    compress
+    notifempty
+    missingok
+}

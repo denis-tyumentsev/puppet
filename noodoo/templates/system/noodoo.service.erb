@@ -1,0 +1,13 @@
+[Service]
+ExecStart=/bin/sh -ec <%= @noodoo_path %>/bin/start-noodoo.sh
+ExecReload=/bin/sh -ec <%= @noodoo_path %>/bin/reload-noodoo.sh
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=noodoo
+User=noodoo
+Group=noodoo
+
+[Install]
+WantedBy=multi-user.target
+

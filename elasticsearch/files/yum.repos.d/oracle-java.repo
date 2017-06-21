@@ -1,0 +1,6 @@
+[eurochem-java]
+name=Eurochem java
+baseurl=http://uds-puppet.moscow.eurochem.ru/jre8/CentOS/$releasever/$basearch
+enabled=1
+gpgcheck=0
+

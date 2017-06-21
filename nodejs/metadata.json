@@ -1,0 +1,14 @@
+{
+  "name": "mmekhanov-nodejs",
+  "version": "0.1.0",
+  "author": "mmekhanov",
+  "summary": "Eurochem NodeJS installer",
+  "license": "Apache 2.0",
+  "source": "https://github.com/minkolazer/puppet-nodejs",
+  "project_page": "https://github.com/minkolazer/puppet-nodejs",
+  "issues_url": "https://github.com/minkolazer/puppet-nodejs/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+

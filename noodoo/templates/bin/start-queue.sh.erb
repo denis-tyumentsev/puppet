@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+APP_DIR="<%= @noodoo_path %>/app"
+APP="./organizers/orchid/node_modules/nd-queue/bin/queue orchid"
+PID_FILE="<%= @noodoo_path %>/shared/pids/noodoo-queue.pid"
+LOG_FILE="/var/log/noodoo/noodoo-queue.log"
+DEBUG="flow:*,nd-queue"
+NODE_ENV="production"
+
+cd $APP_DIR &&
+NODE_ENV=$NODE_ENV DEBUG=$DEBUG PID_FILE=$PID_FILE $APP >>$LOG_FILE 2>&1
+

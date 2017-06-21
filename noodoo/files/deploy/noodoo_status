@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+systemctl status noodoo.service
+systemctl status noodoo-queue.service
+

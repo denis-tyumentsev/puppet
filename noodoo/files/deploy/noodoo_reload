@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo systemctl reload noodoo.service && echo "noodoo was reloaded" &&
+sudo systemctl reload noodoo-queue.service && echo "noodoo-queue was reloaded" &&
+echo "reload successful"
+
